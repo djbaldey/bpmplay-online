@@ -5,7 +5,8 @@
  * 
  */
 var BITS = [],
-    VALUE = 120;
+    VALUE = 0,
+    EXCLUDE_KEYS = [112,113,114,115,116,117,118,119,120,121,122,123];
 
 function calculation() {
     var bit = (new Date()).getTime(),
@@ -43,8 +44,10 @@ function calculation() {
 
 function mainApp() {
     $('body').on('keydown', function(e) {
-        e.preventDefault();
-        calculation()
+        if (EXCLUDE_KEYS.indexOf(e.which) < 0) {
+            e.preventDefault();
+            calculation()
+        }
     })
     $('button.drum').on('click', function(e) {
         e.preventDefault();
