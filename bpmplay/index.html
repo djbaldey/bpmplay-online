@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BPMPlay</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <header class="text-muted pull-right" style="margin-top: 20px;">
+            <span><img src="agplv3-88x31.png">Powered by <a href="https://rosix.ru/">Grigoriy Kramarenko</a></span>
+        </header>
+        <div class="row">
+            <div class="col-xs-12">
+                <div align="center" style="margin-top: 100px;">
+                    <h1 class="tempo" align="center">♩ = <span id="tempo">120</span></h1>
+                    <button class="btn btn-lg btn-primary drum">Click to specify the tempo</button>
+                    <p class="help-text" style="margin-top: 20px;">Or press any key to determine the tempo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--[if !IE]> -->
+    <script type="text/javascript">
+        document.write("<script src='jquery/jquery-2.2.4.min.js'>"+"<"+"/script>");
+    </script>
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        document.write("<script src='jquery/jquery-1.12.4.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
