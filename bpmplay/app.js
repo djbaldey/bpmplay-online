@@ -10,10 +10,9 @@ var BITS = [],
 
 function calculation() {
     var bit = (new Date()).getTime(),
-        L = [],
-        len = BITS.length;
+        L = [];
     BITS.splice(0, 0, bit);
-    for (var i=0;i<len;i++) {
+    for (var i=0;i<BITS.length;i++) {
         var x = BITS[i];
         if (i > 0) {
             var v = (BITS[i-1] - x) / 1000; // /1000 - as python diff time
